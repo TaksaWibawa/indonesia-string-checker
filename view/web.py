@@ -37,6 +37,7 @@ def run_streamlit():
 
     raw_cfg = open_file('model/rules.txt')
     cnf = raw_to_cfg(raw_cfg)
+    st.write(cnf)
 
     with col1:
         string_input = st.text_input(
